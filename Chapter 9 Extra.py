@@ -19,5 +19,9 @@ fig = px.funnel(cf, x="nation", y="count", color="medal")
 
 # Line geo
 fig = px.line_geo(nf, locationmode="country names", locations="nation", color="count")
-
 pyo.plot(fig)
+
+# Lastly, if you want to save a graph and export it as image or a pdf, use 'write_image'
+fig.write_image("image.png", format="png")
+
+# We have learnt almost everything which could be told here. For more information, you can look up to the official documentation. 
